@@ -7,10 +7,6 @@ html, body {
   box-sizing: border-box;
 }
 
-.container-left, .container, .container-right {
-  height: 100%;
-}
-
 /*left container style*/
 
 .fundalogo {
@@ -83,7 +79,7 @@ hr {
   border: 0.1em #60C5F8 solid;
   color: #60C5F8;
   width: 95%;
-  margin-top: 1em;
+  margin-top: 2em;
 }
 
 .fa-button {
@@ -112,7 +108,7 @@ hr {
 }
 
 a:hover {
-  text-decoration:none; 
+  text-decoration:none;
 }
 
 .sales-broker {
