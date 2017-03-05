@@ -1,38 +1,37 @@
-<!--
-Dependancy:
-Allow-Control-Allow-Origin
-https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi?utm_source=chrome-app-launcher-info-dialog -->
 
 <html>
 
 <head>
     <meta charset="UTF-8">
-    <title>Funda Text Assigment</title>
+    <title>Funda Test Assigment</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="style/bootstrap.min.css">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/adaptive.css">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,400,600,700&amp;lang=en" />
 </head>
 
 <body>
-    <div class="container-left col-xl-1 col-lg-1 col-md-2 col-sm-3">
+    <div class="container-left col-xl-1 col-lg-1 col-md-2 col-sm-3 col-xs-3">
         <a class="logo" rel="home" href="http://www.funda.nl/" title="to main page" target="_blank">
             <img alt="funda logo" class="fundalogo" src="//assets.fstatic.nl/master_791/assets/components/logo/fundawonen-logo.svg">
         </a>
+
         <form action="https://www.funda.nl/mijn/login/">
             <input type="submit" class="login" value="Log In" />
         </form>
 
-        <form action="https://www.funda.nl/mijn/login/">
+        <form action="https://www.funda.nl/mijn/aanmelden">
             <input type="submit" class="register" value="Register" />
         </form>
 
-        <button class="favourite">
-      <i class="fa fa-heart-o"></i>
-      Save
-  </button>
+        <button class="favourite" disabled>
+          <i class="fa fa-heart-o"></i>
+          Save
+        </button>
+
         <div class="social">
             <a href="http://www.facebook.com/funda" target="_blank">
                 <i class="fa fa-facebook social-button"></i>
@@ -46,45 +45,59 @@ https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeac
         </div>
     </div>
 
-    <div class="container col-xl-4 col-lg-6 col-md-4 col-sm-6">
+    <div class="container col-xl-4 col-lg-6 col-md-4 col-sm-6 col-xs-6">
+
       <div id="main-photo" class="main-photo"></div>
-      <a href="http://www.funda.nl/koop/amsterdam/huis-49165890-bruinvisstraat-73/#foto-1">
-        <i class="fa fa-camera"></i>
-        Photo's</a>
-        <div id="full-description"></div>
-        <hr>
-        <div id="kenmerken">
-          <!-- <div id="stuff">
-          </div> -->
-        </div>
-        <!-- <div id="overdracht">Overdracht</div> -->
-        <hr>
-        <div id="map_canvas" style="width:100%; height:25%">
+        <a href="http://www.funda.nl/koop/amsterdam/huis-49165890-bruinvisstraat-73/#foto-1">
+          <i class="fa fa-camera fa-button">
+            More photo's
+          </i>
+        </a>
+          <h3>Description</h3>
+          <div id="description"></div>
+          <hr>
+          <h4>Kenmerken</h4>
+          <div id="list-header"></div>
+          <hr class="bottom-line">
+          <div id="map_canvas" class="map-style">
+          </div>
+   </div>
 
-        </div>
-
-    </div>
-
-    <div class="container-right col-xl-1 col-lg-1 col-md-2 col-sm-3">
+    <div class="container-right col-xl-1 col-lg-1 col-md-2">
 
         <p class="sales-broker">NVM Sales Broker</p>
 
-        <a href="http://www.funda.nl/makelaars/amsterdam/24594-hoekstra-en-van-eck-amsterdam-noord/" id="broker" class="broker-name">Broker</a>
+        <a href="http://www.funda.nl/makelaars/amsterdam/24594-hoekstra-en-van-eck-amsterdam-noord/">
+          <p id="broker" class="broker-name">  
+            Broker
+          </p>
+        </a>
 
-        <i class="fa fa-clock-o contact-data">Available by telephone until 17:00</i>
+        <i class="fa fa-clock-o fa-button">
+          Available by telephone until 17:00
+        </i>
 
-        <i class="fa fa-phone contact-data">Call<p id="phone">Phone</p></i>
+        <i class="fa fa-phone fa-button">
+          Call
+          <p id="phone">
+            Phone
+          </p>
+        </i>
 
         <form action="http://www.funda.nl/koop/amsterdam/huis-49165890-bruinvisstraat-73/reageer/">
             <input type="submit" class="contact-button" value="Contact" />
         </form>
 
-        <a href="http://www.funda.nl/koop/amsterdam/huis-49165890-bruinvisstraat-73/bezichtiging/" class="contact-data">
-            <i class="fa fa-calendar"></i>Plan a visit
+        <a href="http://www.funda.nl/koop/amsterdam/huis-49165890-bruinvisstraat-73/bezichtiging/">
+            <i class="fa fa-calendar fa-button">
+              Plan a visit
+            </i>
         </a>
 
-        <a href="http://www.funda.nl/koop/amsterdam/huis-49165890-bruinvisstraat-73/brochure/" class="contact-data">
-            <i class="fa fa-download"></i>Request brochure
+        <a href="http://www.funda.nl/koop/amsterdam/huis-49165890-bruinvisstraat-73/brochure/">
+            <i class="fa fa-download fa-button">
+              Request brochure
+            </i>
         </a>
 
     </div>
@@ -94,10 +107,6 @@ https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeac
     <script src="js/app.js"></script>
     <script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyDC7qgo_GF_4xXgiwd8GnCYN7Sq1P6qPKk"></script>
     <script src="js/map.js"></script>
-    <!-- <script async defer
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDC7qgo_GF_4xXgiwd8GnCYN7Sq1P6qPKk&callback=initMap">
-</script> -->
-
 </body>
 
 </html>
