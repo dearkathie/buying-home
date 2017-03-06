@@ -35,6 +35,7 @@
     @media (max-width: 767px) {
     .container-left{
       height: 7%;
+      margin-bottom: 2em;
     }
 
     .col-sm-12 {
